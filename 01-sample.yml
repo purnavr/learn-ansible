@@ -1,5 +1,5 @@
 - name: abc
-  host: localhost
+  hosts: localhost
   tasks:
     - ansible.builtin.debug:
         msg: "hello"
