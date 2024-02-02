@@ -1,5 +1,5 @@
-- name: abc
-  hosts: localhost
+- name:p1
+  hosts:localhost
   tasks:
-    - ansible.builtin.debug:
-        msg: "hello"
+    -ansible.builtin.debug:
+     msg: "hello"
