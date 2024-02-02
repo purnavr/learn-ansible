@@ -4,4 +4,4 @@
     URL: sample.example.com
   tasks:
     - ansible.builtin.debug:
-        msg: url = {{"URL"}}
+        msg: url = {{URL}}
