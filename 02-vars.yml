@@ -10,7 +10,7 @@
   hosts: localhost
   tasks:
     - vars:
-      URL: "task.example.com"
+        URL: "task.example.com"
       ansible.builtin.debug:
         msg: url = {{ URL }}
 
