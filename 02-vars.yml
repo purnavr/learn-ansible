@@ -3,5 +3,15 @@
   vars:
     URL: "sample.example.com"
   tasks:
-    - ansible.builtin.debug:
+    -ansible.builtin.debug:
         msg: url = {{ URL }}
+
+- name: task level variables
+  hosts: localhost
+  tasks:
+    vars:
+      URL: "task.example.com"
+    -ansible.builtin.debug:
+        msg: url = {{ URL }}
+
+
