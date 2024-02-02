@@ -1,2 +1,2 @@
-- ansible.built.debug:
+- ansible.builtin.debug:
     msg: hello
