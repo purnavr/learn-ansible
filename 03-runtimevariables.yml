@@ -7,3 +7,6 @@
 
     - ansible.builtin.debug:
         msg: "{{ purna }}"
+
+    - ansible.builtin.set_fact:
+        status: "{{ purna.cmd }}"
