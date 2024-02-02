@@ -11,7 +11,7 @@
   tasks:
     vars:
       URL: "task.example.com"
-    - ansible.builtin.debug:
+    -ansible.builtin.debug:
         msg: url = {{ URL }}
 
 
