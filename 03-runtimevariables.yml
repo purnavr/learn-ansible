@@ -1,5 +1,5 @@
 - name: register a variable
-  hosts: localhost
+  hosts: all
   tasks:
     - name: shell command
       ansible.builtin.shell: uptime
