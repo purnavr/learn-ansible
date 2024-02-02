@@ -1,5 +1,5 @@
 - name: p1
-  hosts: all
+  hosts: localhost
   tasks:
     - ansible.builtin.debug:
         msg: hello
