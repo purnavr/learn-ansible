@@ -3,4 +3,7 @@
   tasks:
     - name: shell command
       ansible.builtin.shell: uptime
-      register: out
+      register: purna
+
+      ansible.builtin.debug:
+        msg: "{{ purna }}"
