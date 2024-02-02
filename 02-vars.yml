@@ -14,4 +14,12 @@
       ansible.builtin.debug:
         msg: url = {{ URL }}
 
+- name: file level variables
+  hosts: localhost
+  vars_file:
+    var.yml
+  tasks:
+    - ansible.builtin.debug:
+        msg: url = {{ URL }}
+
 
