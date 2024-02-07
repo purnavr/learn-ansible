@@ -1,4 +1,4 @@
-- name: p1
+- name: parameters
   hosts: localhost
   tasks:
     - ansible.builtin.debug:
