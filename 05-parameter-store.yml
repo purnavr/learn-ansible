@@ -1,0 +1,5 @@
+- name: parameter
+  hosts: localhost
+  tasks:
+    debug:
+      msg: “{{ lookup(‘amazon.aws.aws_ssm’, ‘test’) }}”
