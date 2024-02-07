@@ -1,4 +1,4 @@
-- name: parameter
+- name: parameters
   hosts: localhost
   tasks:
     debug:
