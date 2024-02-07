@@ -1,5 +1,5 @@
 - name: parameters
   hosts: localhost
   tasks:
-    debug:
-      msg: “{{ lookup(‘amazon.aws.aws_ssm’, ‘test’) }}”
+    ansible.builtin.debug:
+      “{{ lookup(‘amazon.aws.aws_ssm’, ‘test’) }}”
