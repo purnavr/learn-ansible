@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
     - ansible.builtin.debug:
-        msg: hello
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'test') }}"
 
