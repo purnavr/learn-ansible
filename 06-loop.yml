@@ -1,5 +1,4 @@
-- name: concept
-  hosts: localhost
+- hosts: localhost
   tasks:
     debug:
       msg: fruit name - {{ item }}
@@ -7,3 +6,4 @@
         - orange,
         - apple,
         - guva
+
