@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
     debug:
-      msg: fruit name - "{{ item }}"
+      msg: fruit name - {{ item }}
       loop: apple, banana
