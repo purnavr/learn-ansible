@@ -7,7 +7,7 @@
         - apple
         - banana
 
-- hosts:
+- hosts: localhost
   tasks:
     - debug:
         msg: fruit name - {{ item.name }}, {{ item.quantity }}
