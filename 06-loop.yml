@@ -1,8 +1,9 @@
-debug:
-  msg: fruit name - {{ item }}
-  loop:
-    - orange,
-    - apple,
-    - guva
-
-
+- name: concept
+  hosts: localhost
+  tasks:
+    debug:
+      msg: fruit name - "{{ item }}"
+      loop:
+        - orange
+        - apple
+        - guva
