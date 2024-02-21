@@ -1,6 +1,6 @@
 - name: concept
   hosts: localhost
   tasks:
-    debug:
-      msg: fruit name - {{ item }}
-      loop: apple, banana
+    - debug:
+        msg: fruit name - {{ item }}
+        loop: apple, banana
