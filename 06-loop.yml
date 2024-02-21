@@ -1,9 +1,8 @@
-- hosts: localhost
-  tasks:
-    debug:
-      msg: fruit name - {{ item }}
-      loop:
-        - orange,
-        - apple,
-        - guva
+debug:
+  msg: fruit name - {{ item }}
+  loop:
+    - orange,
+    - apple,
+    - guva
+
 
