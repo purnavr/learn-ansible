@@ -1,0 +1,9 @@
+- name: loop
+  hosts: localhost
+  tasks:
+    debug:
+      msg: fruit name - {{ item }}
+      loop:
+        - orange
+        - apple
+        - guva
