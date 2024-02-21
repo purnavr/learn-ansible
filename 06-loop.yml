@@ -4,6 +4,4 @@
     debug:
       msg: fruit name - "{{ item }}"
       loop:
-        - orange
-        - apple
-        - guva
+        [apple, guva, banana]
