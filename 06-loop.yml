@@ -3,4 +3,6 @@
   tasks:
     - debug:
         msg: fruit name - {{ item }}
-        loop: apple, banana
+        loop:
+          - apple
+          - banana
