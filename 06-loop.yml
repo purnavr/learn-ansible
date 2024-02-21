@@ -3,5 +3,4 @@
   tasks:
     debug:
       msg: fruit name - "{{ item }}"
-      loop:
-        [apple, guva, banana]
+      loop: apple, banana
