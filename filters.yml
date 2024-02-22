@@ -1,11 +1,11 @@
-#- name: cut the url
-#  hosts: localhost
-#  vars:
-#    url: https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
-#  tasks:
-#    - name: filter
-#      debug:
-#        msg: "{{ url | split('/') | last | regex_replace('.tar.gz', '') }}"
+- name: cut the url
+  hosts: localhost
+  vars:
+    url: https://github.com/prometheus/node_exporter/releases/download/v1.7.0/node_exporter-1.7.0.linux-amd64.tar.gz
+  tasks:
+    - name: filter
+      debug:
+        msg: "{{ url | split('/') | last | regex_replace('.tar.gz', '') }}"
 
 - name: filter the url
   hosts: localhost
