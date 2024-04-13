@@ -21,6 +21,6 @@
   vars:
     url: https://github.com/prometheus/prometheus/releases/download/v2.51.1/prometheus-2.51.1.linux-amd64.tar.gz
   tasks:
-    - name: alertmanager filter
+    - name: prometheus filter
       debug:
         msg: "{{ url | split('/') }}"
