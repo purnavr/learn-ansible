@@ -23,4 +23,4 @@
   tasks:
     - name: prometheus filter
       debug:
-        msg: "{{ url | split('/') | last | regex_replace('.tar,gz', '') }}"
+        msg: "{{ url | split('/') | last | regex_replace('.tar.gz', '') }}"
