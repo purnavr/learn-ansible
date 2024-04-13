@@ -24,3 +24,21 @@
     - name: prometheus filter
       debug:
         msg: "{{ url | split('/') | last | regex_replace('.tar.gz', '') }}"
+
+
+### output of split('/')
+#"msg": [
+#  "https:",
+#  "",
+#  "github.com",
+#  "prometheus",
+#  "prometheus",
+#  "releases",
+#  "download",
+#  "v2.51.1",
+#  "prometheus-2.51.1.linux-amd64.tar.gz"
+#]
+
+
+### output of last | regex_replace('.tar.gz', '')
+#"msg": "prometheus-2.51.1.linux-amd64"
